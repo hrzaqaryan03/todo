@@ -1,0 +1,77 @@
+
+
+.todo {
+    width: 100%;
+    max-width: 1170px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 10px;
+    background-color: #374151b0;
+    border-radius: 20px;
+    height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .top {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 600px;
+        .controls {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btns {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                
+                button {
+                    padding: 10px;
+                    border-radius: 6px;
+                    background-color: #ffffff31;
+                    color:#d0d0d0 ;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    cursor: pointer;
+                }   
+            }
+            .filters {
+             
+                label {
+                    padding: 10px;
+                    margin-right: 6px;
+                    border: 1px solid #a4a4a4;
+                    color: #d0d0d0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    &:checked {
+                        background-color: #fff;
+                    }
+                    input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
